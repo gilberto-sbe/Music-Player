@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Music Player</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1024">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+</head>
+<body>
+<!-- START CONTENT  -->
+
+<div class="player">
+    <div class="player__bar">
+        <div class="player__album">
+            <div class="player__albumImg active-song" data-author="Korn" data-song="Falling Away from You" data data-src="msc/falling-away-from-me.mp3"
+                style="background-image: url(img/issues.jpg)">
+            </div>
+            <div class="player__albumImg" data-author="Korn" data-song="Somebody Someone" data data-src="msc/somebody-someone.mp3"
+                style="background-image: url(img/issues.jpg)">
+            </div>
+            <div class="player__albumImg" data-author="Korn" data-song="Make Me Bad" data data-src="msc/make-me-bad.mp3"
+            style="background-image: url(img/issues.jpg)">
+            </div>
+            <div class="player__albumImg" data-author="Korn" data-song="Blind" data data-src="msc/blind.mp3"
+            style="background-image: url(img/korn.jpg)">
+            </div>
+        </div>
+        <div class="player__controls">
+
+            <div class="player__prev">
+                <svg class="icon">
+                    <img src="img/proximo.png">
+                </svg>
+            </div>
+
+            <div class="player__play">
+                <svg class="icon play">
+                    <img src="img/reproduction.png">
+                </svg>
+                <svg class="icon pause">
+                    <use xlink:href="img/pause.svg"></use>
+                </svg>
+            </div>
+
+            <div class="player__next">
+                <svg class="icon">
+                    <img src="img/proximo.png">
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="player__timeline">
+        <p class="player__author"></p>
+        <p class="player__song"></p>
+        <div class="player__timelineBar">
+            <div id="playhead"></div>
+        </div>
+    </div>
+</div>
+
+<!-- END CONTENT  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
